@@ -6,12 +6,11 @@ import React, { useRef } from 'react'
 import styled from 'styled-components'
 import { LogoSvg } from './LogoSvg'
 
-const easeFlip = bezier(0.34, 1.4, 0.5, 1)
-const easeFlip2 = bezier(0.34, 1.8, 0.5, 1)
+interface LogoProps extends StepProps {
+    color: string
+}
 
-const timescale = 0.8
-
-export const Logo = (props: StepProps) => {
+export const Logo = (props: LogoProps) => {
     const ref = useRef(null)
     const refGlass = useRef(null)
     const refLiquid = useRef(null)
@@ -37,6 +36,7 @@ export const Logo = (props: StepProps) => {
     return (
         <Container ref={ref}>
             <LogoSvg
+                color={props.color}
                 refGlass={refGlass}
                 refLiquid={refLiquid}
                 refFront={refFront}
@@ -47,6 +47,11 @@ export const Logo = (props: StepProps) => {
         </Container>
     )
 }
+
+const easeFlip = bezier(0.34, 1.4, 0.5, 1)
+const easeFlip2 = bezier(0.34, 1.8, 0.5, 1)
+
+const timescale = 0.8
 
 const glass = (ref: any) =>
     trail(htmlElementRenderer(ref.current), [
