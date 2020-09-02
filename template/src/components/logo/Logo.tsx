@@ -5,6 +5,12 @@ import { delay, fromTo, htmlElementRenderer, parallel, trail, val } from 'light-
 import React, { useRef } from 'react'
 import styled from 'styled-components'
 import { LogoSvg } from './LogoSvg'
+import { brandColor } from 'styles/colors'
+
+const easeFlip = bezier(0.34, 1.4, 0.5, 1)
+const easeFlip2 = bezier(0.34, 1.8, 0.5, 1)
+
+const timescale = 0.8
 
 interface LogoProps extends StepProps {
     color: string
@@ -48,11 +54,6 @@ export const Logo = (props: LogoProps) => {
     )
 }
 
-const easeFlip = bezier(0.34, 1.4, 0.5, 1)
-const easeFlip2 = bezier(0.34, 1.8, 0.5, 1)
-
-const timescale = 0.8
-
 const glass = (ref: any) =>
     trail(htmlElementRenderer(ref.current), [
         fromTo(
@@ -82,7 +83,7 @@ const textFront = (ref: any) =>
         delay(75 * timescale),
         fromTo(
             {
-                x: val(50, 0, 'px'),
+                x: val(-30, 0, 'px'),
                 opacity: val(0, 1),
             },
             900 * timescale,
@@ -95,24 +96,23 @@ const textCooking = (ref: any) =>
         delay(75 * timescale),
         fromTo(
             {
-                x: val(50, 0, 'px'),
+                x: val(-30, 0, 'px'),
                 opacity: val(0, 1),
             },
-            1000 * timescale,
+            900 * timescale,
             easeFlip2,
         ),
     ])
 
 const textDot = (ref: any) =>
     trail(htmlElementRenderer(ref.current), [
-        delay(250 * timescale),
+        delay(75 * timescale),
         fromTo(
             {
-                scale: val(0, 1),
-                x: val(20, 0, 'px'),
+                x: val(-30, 0, 'px'),
                 opacity: val(0, 1),
             },
-            500 * timescale,
+            900 * timescale,
             easeFlip2,
         ),
     ])
