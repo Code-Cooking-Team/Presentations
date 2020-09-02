@@ -61,7 +61,7 @@ const glass = (ref: any) =>
                 x: val(150, 0, 'px'),
                 opacity: val(0, 1),
             },
-            800 / timescale,
+            800 * timescale,
             easeFlip,
         ),
     ])
@@ -72,61 +72,61 @@ const liquid = (ref: any) =>
             {
                 rotate: val(-240, 0, 'deg'),
             },
-            1000 / timescale,
+            1000 * timescale,
             easeFlip,
         ),
     ])
 
 const textFront = (ref: any) =>
     trail(htmlElementRenderer(ref.current), [
-        delay(75 / timescale),
+        delay(75 * timescale),
         fromTo(
             {
                 x: val(50, 0, 'px'),
                 opacity: val(0, 1),
             },
-            900 / timescale,
+            900 * timescale,
             easeFlip2,
         ),
     ])
 
 const textCooking = (ref: any) =>
     trail(htmlElementRenderer(ref.current), [
-        delay(75 / timescale),
+        delay(75 * timescale),
         fromTo(
             {
                 x: val(50, 0, 'px'),
                 opacity: val(0, 1),
             },
-            1000 / timescale,
+            1000 * timescale,
             easeFlip2,
         ),
     ])
 
 const textDot = (ref: any) =>
     trail(htmlElementRenderer(ref.current), [
-        delay(250 / timescale),
+        delay(250 * timescale),
         fromTo(
             {
                 scale: val(0, 1),
                 x: val(20, 0, 'px'),
                 opacity: val(0, 1),
             },
-            500 / timescale,
+            500 * timescale,
             easeFlip2,
         ),
     ])
 
 const bubbles = (ref: any) =>
     trail(htmlElementRenderer(ref.current), [
-        delay(450 / timescale),
+        delay(450 * timescale),
         fromTo(
             {
                 opacity: val(0, 1),
                 rotate: val(-25, 0, 'deg'),
                 scale: val(0.6, 1),
             },
-            1000 / timescale,
+            1000 * timescale,
             easeFlip,
         ),
     ])
