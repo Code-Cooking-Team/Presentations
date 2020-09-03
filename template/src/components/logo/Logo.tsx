@@ -5,12 +5,6 @@ import { delay, fromTo, htmlElementRenderer, parallel, trail, val } from 'light-
 import React, { useRef } from 'react'
 import styled from 'styled-components'
 import { LogoSvg } from './LogoSvg'
-import { brandColor } from 'styles/colors'
-
-const easeFlip = bezier(0.34, 1.4, 0.5, 1)
-const easeFlip2 = bezier(0.34, 1.8, 0.5, 1)
-
-const timescale = 0.8
 
 interface LogoProps extends StepProps {
     color: string
@@ -53,6 +47,11 @@ export const Logo = (props: LogoProps) => {
         </Container>
     )
 }
+
+const easeFlip = bezier(0.34, 1.4, 0.5, 1)
+const easeFlip2 = bezier(0.34, 1.8, 0.5, 1)
+
+const timescale = 0.8
 
 const glass = (ref: any) =>
     trail(htmlElementRenderer(ref.current), [
