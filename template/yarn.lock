@@ -1018,7 +1018,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.5.1":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.5.1", "@babel/runtime@^7.9.2":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -1345,10 +1345,10 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@phenomenon/slides@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@phenomenon/slides/-/slides-0.1.3.tgz#24f7217293316d4f19596e29a950cf6b26e4a803"
-  integrity sha512-Im1c4lxdiYcPW94x+/xQdBvRF3Gs4KqGyc4s1Vw3seMpLwyN6XPwGAQtIqBJBHvgl+1r3LkDnSys+nde1x45Jw==
+"@phenomenon/slides@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@phenomenon/slides/-/slides-0.3.0.tgz#e5151030f4aa8886702ce5b568fcb027dfcd5ab5"
+  integrity sha512-OKH+79lcDGXSvAN1hv1au633ZJ8Hj++ElpIuFwPBeZeegNn9+vbiA/p0zHmT5r9qN2E5rONMoeslEAqYBsyxLA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     light-trails "^0.5.0"
@@ -7855,6 +7855,13 @@ pnp-webpack-plugin@1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
+polished@^3.6.6:
+  version "3.6.6"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-3.6.6.tgz#91ef9eface9be5366c07672b63b736f50c151185"
+  integrity sha512-yiB2ims2DZPem0kCD6V0wnhcVGFEhNh0Iw0axNpKU+oSAgFt6yx6HxIT23Qg0WWvgS379cS35zT4AOyZZRzpQQ==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
+
 portfinder@^1.0.26:
   version "1.0.28"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.28.tgz#67c4622852bd5374dd1dd900f779f53462fac778"
@@ -10132,6 +10139,22 @@ styled-components@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.1.1.tgz#96dfb02a8025794960863b9e8e365e3b6be5518d"
   integrity sha512-1ps8ZAYu2Husx+Vz8D+MvXwEwvMwFv+hqqUwhNlDN5ybg6A+3xyW1ECrAgywhvXapNfXiz79jJyU0x22z0FFTg==
+  dependencies:
+    "@babel/helper-module-imports" "^7.0.0"
+    "@babel/traverse" "^7.4.5"
+    "@emotion/is-prop-valid" "^0.8.8"
+    "@emotion/stylis" "^0.8.4"
+    "@emotion/unitless" "^0.7.4"
+    babel-plugin-styled-components ">= 1"
+    css-to-react-native "^3.0.0"
+    hoist-non-react-statics "^3.0.0"
+    shallowequal "^1.1.0"
+    supports-color "^5.5.0"
+
+styled-components@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.2.0.tgz#6dcb5aa8a629c84b8d5ab34b7167e3e0c6f7ed74"
+  integrity sha512-9qE8Vgp8C5cpGAIdFaQVAl89Zgx1TDM4Yf4tlHbO9cPijtpSXTMLHy9lmP0lb+yImhgPFb1AmZ1qMUubmg3HLg==
   dependencies:
     "@babel/helper-module-imports" "^7.0.0"
     "@babel/traverse" "^7.4.5"
