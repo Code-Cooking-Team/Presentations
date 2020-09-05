@@ -1,6 +1,6 @@
 import { Frag, Code } from '@phenomenon/slides'
 import React from 'react'
-import { Container } from './App'
+import { Container } from '../App'
 export function Background0() {
     return (
         <Container>

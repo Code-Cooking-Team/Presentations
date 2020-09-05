@@ -3,8 +3,11 @@ import { Logo } from 'components/logo/Logo'
 import React from 'react'
 import { brandColor, artColor } from 'styles/colors'
 import styled from 'styled-components'
-import { Background1 } from './Background1'
-import { Background0 } from './Background0'
+import { Background0 } from './slides/Background0'
+import { Background1 } from './slides/Background1'
+import { Background2 } from './slides/Background2'
+import { Background3 } from './slides/Background3'
+import { Background4, ExampleBg } from './slides/Background4'
 
 export const App = () => {
     let i = 0
@@ -13,7 +16,10 @@ export const App = () => {
             <Slide></Slide>
             <Slide>
                 <Logo color={artColor} in={0} />
-                <Title>Hover podkreslenie z wysuwającą się linia</Title>
+
+                <Fade in={0}>
+                    <Title>Hover podkreslenie z wysuwającą się linia</Title>
+                </Fade>
             </Slide>
             <Slide>
                 <>
@@ -245,6 +251,44 @@ export const App = () => {
             <Slide>
                 <Background1 />
             </Slide>
+            <Slide>
+                <Background2 />
+            </Slide>
+            <Slide>
+                <Background3 />
+            </Slide>
+            <Slide>
+                <Background4 />
+            </Slide>
+            <Slide>
+                <Logo
+                    color={artColor}
+                    in={0}
+                    style={{ width: '300px', margin: '0 auto' }}
+                />
+                <Fade in={0}>
+                    <ExampleBg>
+                        <Title>Wykonanie:</Title>
+                        <Text>Głos: Bartosz Kozak</Text>
+                        <Text>Prezentacja: Bartosz Kozak & Kacper Kozak</Text>
+                        <Text>Research i tekst: Bartosz Kozak & Kacper Kozak</Text>
+                        <Text>
+                            Powered by:{' '}
+                            <a
+                                className="line"
+                                href="https://react-phenomenon.github.io/phenomenon/"
+                            >
+                                phenomenon
+                            </a>
+                        </Text>
+                        <Text>
+                            <a className="line" href="https://front.cooking">
+                                Front.Cooking
+                            </a>
+                        </Text>
+                    </ExampleBg>
+                </Fade>
+            </Slide>
         </Deck>
     )
 }
@@ -254,6 +298,10 @@ const Title = styled.div`
     font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
+`
+const Text = styled.p`
+    text-align: center;
+    font-size: 20px;
 `
 
 export const Container = styled.div`

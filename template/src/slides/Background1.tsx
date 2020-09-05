@@ -1,7 +1,7 @@
 import { Code, Frag } from '@phenomenon/slides'
 import { lighten } from 'polished'
 import React from 'react'
-import { artColor } from 'styles/colors'
+import { artColor } from '../styles/colors'
 export function Background1() {
     let i = 0
     return (
@@ -14,11 +14,10 @@ export function Background1() {
                             color: ${artColor};
                             $BG1
                             $BG2
-                            $BG3
                         }
                         
                         .line:hover {
-                            color: ${lighten(0.3, artColor)};
+                            color: ${lighten(0.1, artColor)};
                         }
                         `}
             >
@@ -26,21 +25,16 @@ export function Background1() {
                     id="BG1"
                     in={++i}
                     indent={1}
-                    code={`background: linear-gradient(0.25turn, #ea500e, #29a9df);`}
+                    code={`background: linear-gradient(to right, #e032d9, #29a9df);`}
                 />
                 <Frag
                     id="BG2"
                     in={++i}
                     indent={1}
-                    code={`background-repeat: no-repeat;`}
-                />
-                <Frag
-                    id="BG3"
-                    in={++i}
-                    indent={1}
                     code={`
-                        background-size: 0% 1px;
-                        background-position: 100% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 100% 1px;
+                    background-position: 100% 100%;
                     `}
                 />
             </Code>

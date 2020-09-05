@@ -20,7 +20,7 @@ export const LogoSvg = ({
     refBubbles,
 }: LogoSvgProps) => {
     return (
-        <svg width="741" height="307" viewBox="0 0 741 307" fill="none">
+        <svg width="741" height="auto" viewBox="0 0 741 307" fill="none">
             <g>
                 <g ref={refGlass} id="glass" style={{ transformOrigin: ' 169px 167px' }}>
                     <g id="Union">

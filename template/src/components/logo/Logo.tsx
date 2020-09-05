@@ -8,6 +8,7 @@ import { LogoSvg } from './LogoSvg'
 
 interface LogoProps extends StepProps {
     color: string
+    style?: object
 }
 
 export const Logo = (props: LogoProps) => {
@@ -34,7 +35,7 @@ export const Logo = (props: LogoProps) => {
     )
 
     return (
-        <Container ref={ref}>
+        <Container ref={ref} style={props.style}>
             <LogoSvg
                 color={props.color}
                 refGlass={refGlass}
