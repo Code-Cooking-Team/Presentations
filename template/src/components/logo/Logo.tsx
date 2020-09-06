@@ -52,7 +52,7 @@ export const Logo = (props: LogoProps) => {
 const easeFlip = bezier(0.34, 1.4, 0.5, 1)
 const easeFlip2 = bezier(0.34, 1.8, 0.5, 1)
 
-const timescale = 0.8
+const timescale = 1
 
 const glass = (ref: any) =>
     trail(htmlElementRenderer(ref.current), [

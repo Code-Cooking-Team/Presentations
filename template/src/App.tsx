@@ -9,6 +9,9 @@ import { Background2 } from './slides/Background2'
 import { Background3 } from './slides/Background3'
 import { Background4, ExampleBg } from './slides/Background4'
 
+const WINDOW = window as any
+const inRenderMode: boolean = WINDOW.__RENDER__
+
 export const App = () => {
     let i = 0
     return (
@@ -63,12 +66,13 @@ export const App = () => {
                 <>
                     <Code
                         filename="style.css"
+                        scale={1.2}
                         code={`
                             $LINE
                             $AFTER
                             $HOVER
                         `}
-                        maxHeight={390}
+                        maxHeight={380}
                     >
                         <Frag
                             id="LINE"
@@ -185,6 +189,7 @@ export const App = () => {
                 <>
                     <Code
                         filename="style.css"
+                        scale={1.2}
                         code={`
                             .line::after {
                                 content: "";
@@ -277,24 +282,16 @@ export const App = () => {
                 />
                 <Fade in={0}>
                     <ExampleBg>
-                        <Title>Wykonanie:</Title>
-                        <Text>Głos: Bartosz Kozak</Text>
-                        <Text>Prezentacja: Bartosz Kozak & Kacper Kozak</Text>
-                        <Text>Research i tekst: Bartosz Kozak & Kacper Kozak</Text>
-                        <Text>
-                            Powered by:{' '}
-                            <a
-                                className="line"
-                                href="https://react-phenomenon.github.io/phenomenon/"
-                            >
-                                phenomenon
-                            </a>
-                        </Text>
-                        <Text>
-                            <a className="line" href="https://front.cooking">
-                                Front.Cooking
-                            </a>
-                        </Text>
+                        <Text>Mówił: Bartosz Kozak</Text>
+                        <Text>Materiały: Bartosz Kozak, Kacper Kozak</Text>
+                        <Text>Montaż: Bartosz Kozak</Text>
+                        {!inRenderMode && (
+                            <Text>
+                                <a className="line" href="https://front.cooking">
+                                    Front.Cooking
+                                </a>
+                            </Text>
+                        )}
                     </ExampleBg>
                 </Fade>
             </Slide>
@@ -347,14 +344,14 @@ const LinkBase = styled.div`
 const Example1 = styled(LinkBase)`
     .line::after {
         bottom: 0;
-        height: 1px;
+        height: 2px;
     }
 `
 
 const Example2 = styled(LinkBase)`
     .line::after {
         bottom: 0;
-        height: 1px;
+        height: 2px;
         transform-origin: 100% 50%;
     }
 
