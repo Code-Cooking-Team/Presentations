@@ -22,6 +22,31 @@ export const App = () => {
                 </Fade>
             </Slide>
             <Slide>
+                <Example2>
+                    <a href="#" className="line">
+                        Example Link
+                    </a>
+                </Example2>
+                <Expand in={i}>
+                    <Example3>
+                        <a href="#" className="line">
+                            Example Link 2
+                        </a>
+                    </Example3>
+                    <Example4>
+                        <a href="#" className="line">
+                            Example Link 3
+                        </a>
+                    </Example4>
+                    <Example5>
+                        <a href="#" className="line">
+                            Example Link 4
+                        </a>
+                    </Example5>
+                </Expand>
+            </Slide>
+
+            <Slide>
                 <>
                     <Code
                         filename="index.html"
@@ -69,15 +94,6 @@ export const App = () => {
                             padding: 10px;
                             margin: 20px;
                             font-size: 25px;
-                        `}
-                        />
-                        <Frag
-                            id="STEP2"
-                            in={i++}
-                            indent={1}
-                            code={`
-
-                            transition: color 0.35s ease;
                         `}
                         />
                         <Frag
