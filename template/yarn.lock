@@ -1345,10 +1345,10 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@phenomenon/render-video@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@phenomenon/render-video/-/render-video-0.1.0.tgz#f3d1a979f3088ae40fa362b34fdab1c790c9928a"
-  integrity sha512-cKYr9tgDZCWHXG9e7wHiqEOgAJG6Vp3u/Rd4Ws5Nu1JZSMwseLPJw6pscCsEsj/NuCTPZcana2g7UmnbumIAog==
+"@phenomenon/render-video@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@phenomenon/render-video/-/render-video-0.1.1.tgz#2fe394579399bec11d3ad15115b80bc267da795b"
+  integrity sha512-8zAF9anwNHehmliIxptPA9uEpnWQ0TtJ7gsPFjCVNuiuiheovx/5YwnHAJ+EO6gcMfVTfFWnKw8vXkA5MFF3zw==
   dependencies:
     fluent-ffmpeg "^2.1.2"
     pretty-ms "^5.1.0"
