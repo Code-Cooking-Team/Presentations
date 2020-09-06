@@ -2,8 +2,14 @@
   "name": "template",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "render": "render-video"
+  },
   "dependencies": {
-    "@phenomenon/slides": "^0.3.0",
+    "@phenomenon/slides": "^0.3.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -21,11 +27,8 @@
     "styled-components": "^5.2.0",
     "typescript": "~3.7.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@phenomenon/render-video": "^0.1.0"
   },
   "eslintConfig": {
     "extends": "react-app"
