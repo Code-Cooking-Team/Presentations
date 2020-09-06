@@ -14,7 +14,7 @@ export const App = () => {
     return (
         <Deck>
             <Slide></Slide>
-            <Slide>
+            <Slide config={{ backgroundImage: require('./assets/bg.jpg') }}>
                 <Logo color={artColor} in={0} />
 
                 <Fade in={0}>
@@ -53,10 +53,9 @@ export const App = () => {
                 <>
                     <Code
                         filename="index.html"
+                        scale={1.2}
                         code={`
-
                             <a href="#"$CLASS>Example link</a>
-                            
                         `}
                     >
                         <Frag id="CLASS" in={1} code={` class="line"`} inline />
@@ -68,9 +67,9 @@ export const App = () => {
                     <Code
                         filename="style.css"
                         code={`
-                        $LINE
-                        $AFTER
-                        $HOVER
+                            $LINE
+                            $AFTER
+                            $HOVER
                         `}
                         maxHeight={390}
                     >
@@ -79,55 +78,55 @@ export const App = () => {
                             in={i++}
                             indent={0}
                             code={`
-                            .line {
-                                $STEP1
-                                $STEP2
-                                $STEP3
-                                $STEP4
-                            }
-                        `}
+                                .line {
+                                    $STEP1
+                                    $STEP2
+                                    $STEP3
+                                    $STEP4
+                                }
+                            `}
                         />
                         <Frag
                             id="STEP1"
                             in={i++}
                             indent={1}
                             code={`
-                            text-decoration: none;
-                            color: #fff;
-                            padding: 10px;
-                            margin: 20px;
-                            font-size: 25px;
-                        `}
+                                text-decoration: none;
+                                color: #fff;
+                                padding: 10px;
+                                margin: 20px;
+                                font-size: 25px;
+                            `}
                         />
                         <Frag
                             id="STEP3"
                             in={i++}
                             indent={1}
                             code={`
-                            display: block;
-                        `}
+                                display: block;
+                            `}
                         />
                         <Frag
                             id="STEP4"
                             in={i++}
                             indent={1}
                             code={`
-                            position: relative;
-                        `}
+                                position: relative;
+                            `}
                         />
                         <Frag
                             id="AFTER"
                             in={i++}
                             indent={0}
                             code={`
-                            
-                            .line::after {
-                                content: "";
-                                $AFTER1
-                                $AFTER2
-                                $AFTER3
-                            }
-                        `}
+                                
+                                .line::after {
+                                    content: "";
+                                    $AFTER1
+                                    $AFTER2
+                                    $AFTER3
+                                }
+                            `}
                         />
                         <Frag
                             id="AFTER1"
@@ -140,7 +139,7 @@ export const App = () => {
                                 bottom: 0;
                                 height: 1px;
                                 background: ${artColor};
-                        `}
+                            `}
                         />
 
                         <Frag
@@ -149,35 +148,29 @@ export const App = () => {
                             indent={0}
                             code={`
 
-                            .line:hover::after {
-                                $HOVER1
-                            }
-                        `}
+                                .line:hover::after {
+                                    $HOVER1
+                                }
+                            `}
                         />
 
                         <Frag
                             id="AFTER2"
                             in={++i}
                             indent={1}
-                            code={`
-                            transform: scaleX(0);
-                        `}
+                            code={`transform: scaleX(0);`}
                         />
                         <Frag
                             id="HOVER1"
                             in={i}
                             indent={1}
-                            code={`
-                            transform: scaleX(1);
-                        `}
+                            code={`transform: scaleX(1);`}
                         />
                         <Frag
                             id="AFTER3"
                             in={++i}
                             indent={1}
-                            code={`
-                            transition: transform 0.35s ease;
-                        `}
+                            code={`transition: transform 0.35s ease;`}
                         />
                     </Code>
                 </>
@@ -196,23 +189,23 @@ export const App = () => {
                     <Code
                         filename="style.css"
                         code={`
-                        .line::after {
-                            content: "";
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
-                            height: 1px;
-                            background: ${artColor};
-                            transform: scaleX(0);
-                            transition: transform 0.35s ease;
-                            $AFTER
-                        }
-                        
-                        .line:hover::after {
-                            transform: scaleX(1);
-                            $HOVER
-                        }
+                            .line::after {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                height: 1px;
+                                background: ${artColor};
+                                transform: scaleX(0);
+                                transition: transform 0.35s ease;
+                                $AFTER
+                            }
+                            
+                            .line:hover::after {
+                                transform: scaleX(1);
+                                $HOVER
+                            }
                         `}
                     >
                         <Frag
