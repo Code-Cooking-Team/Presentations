@@ -18,10 +18,7 @@ export const App = () => {
                 <Logo color={artColor} in={0} />
 
                 <Fade in={0}>
-                    <Title>
-                        Underline hover - Underline hover - Podkreślenie z wysuwającą się
-                        linią
-                    </Title>
+                    <Title>Underline hover - Podkreślenie z wysuwającą się linią</Title>
                 </Fade>
             </Slide>
             <Slide>

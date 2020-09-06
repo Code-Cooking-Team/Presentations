@@ -1354,10 +1354,10 @@
     pretty-ms "^5.1.0"
     puppeteer "^2.0.0"
 
-"@phenomenon/slides@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@phenomenon/slides/-/slides-0.3.1.tgz#7cc82d9686c5b951be80fc73a33f888cd20caaad"
-  integrity sha512-66s8nNscTfCHY8mcDDVUkln9cG4+N7EVokZa/mfg6uET0uV8IN8GZvDUWn8pkp49QSUa78hXoncHz9fr+Ma68g==
+"@phenomenon/slides@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@phenomenon/slides/-/slides-0.4.2.tgz#415d3d6a425ed5c64810e30a60fd7f0b20489df7"
+  integrity sha512-71QBSDf0qY4ahXz2l089jW5o+OTOCH0eo4USkrbVxr+pT5Fl8sPxLrF/6mwJPwpAadOyj9HGsRdLqOkLy1HTvQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     light-trails "^0.5.0"
