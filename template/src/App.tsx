@@ -1,4 +1,4 @@
-import { Deck, Slide, Frag, Code, Fade, Expand } from '@phenomenon/slides'
+import { Deck, Slide, Frag, Code, Fade, Expand, inRenderMode } from '@phenomenon/slides'
 import { Logo } from 'components/logo/Logo'
 import React from 'react'
 import { brandColor, artColor } from 'styles/colors'
@@ -9,14 +9,10 @@ import { Background2 } from './slides/Background2'
 import { Background3 } from './slides/Background3'
 import { Background4, ExampleBg } from './slides/Background4'
 
-const WINDOW = window as any
-const inRenderMode: boolean = WINDOW.__RENDER__
-
 export const App = () => {
     let i = 0
     return (
         <Deck>
-            <Slide></Slide>
             <Slide config={{ backgroundImage: require('./assets/bg.jpg') }}>
                 <Logo color={artColor} in={0} />
 

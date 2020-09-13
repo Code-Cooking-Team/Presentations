@@ -1374,13 +1374,14 @@
     pretty-ms "^5.1.0"
     puppeteer "^5.2.1"
 
-"@phenomenon/slides@^0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@phenomenon/slides/-/slides-0.4.4.tgz#d5af178e46097b4dcb0cba15c3bcc53a8860bd68"
-  integrity sha512-GsYYriPuUgksf+KdyAmWhzZYuoac4a3iSBvU9vNPbxoCiEpzmVtPNMjt1slvjiqu6UeO+QQKchFGvJ40PCjE1g==
+"@phenomenon/slides@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@phenomenon/slides/-/slides-0.5.0.tgz#d3799695c5005843c5c6ba9a0710f2707de0ae6c"
+  integrity sha512-7wKrinVOi6DnPI8AjfqezwIxXPSL1uPnA8OvUO+omqK+/d/QUlJxt/QNMfWevwEahmbpzIF0vY+GViRFUoeUKg==
   dependencies:
     "@babel/runtime" "^7.11.2"
-    light-trails "^0.5.0"
+    light-trails "^0.6.1"
+    light-trails-inspector "^0.4.1"
     lodash "^4.17.11"
     react "^16.10.2"
     react-use "^13.12.1"
@@ -6867,10 +6868,17 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-light-trails@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/light-trails/-/light-trails-0.5.0.tgz#5230c8fcdf93b3f89297b75b83d04569c2f4f85e"
-  integrity sha512-NoCN47lmrbzjFbOaG1+JBhOPcbUFXm0Wys+IXQR7FQEitYOh2cFUIt52Ig/n1jZ8QKet1J/aoSBifssFOlWmIg==
+light-trails-inspector@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/light-trails-inspector/-/light-trails-inspector-0.4.1.tgz#bc29189051b8c416129dc63372878b5b65c3f7cd"
+  integrity sha512-bw9MOc4+35oieayXDRWhdDPtDUZubXVuRnpsqKeCuFJVgUmrtCZmEkvzcI8xxMuBHS7AEYsBeEHqergSXKt/FQ==
+  dependencies:
+    light-trails "*"
+
+light-trails@*, light-trails@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/light-trails/-/light-trails-0.6.1.tgz#8b77a3a77b0a30e1c7f4af72201e3bb58958d477"
+  integrity sha512-8e5JxAPA9HiTnmFQtHeRgLgFsjmyz/0dLZEMkQrkHdaFvXlI8DnUEDVF+sP3FQpGlRQpCPX3Mui/NLlqvczhVA==
 
 lines-and-columns@^1.1.6:
   version "1.1.6"
